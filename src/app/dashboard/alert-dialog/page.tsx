@@ -1,3 +1,5 @@
+'use client'
+
 import { AlertDescription } from "@/components/ui/alert";
 import {
   AlertDialog,
@@ -28,7 +30,7 @@ export default function Page() {
             </AlertDescription>
             <AlertDialogFooter>
               <AlertDialogCancel>Cancel</AlertDialogCancel>
-              <AlertDialogAction>Continue</AlertDialogAction>
+              <AlertDialogAction onClick={() => console.log("Continue")}>Continue</AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogHeader>
         </AlertDialogContent>
